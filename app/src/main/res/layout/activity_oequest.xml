@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OEQuest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Score"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:text="What is the name of this course?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your answer: "
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/oeans"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:baselineAligned="false"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        tools:ignore="LabelFor,ObsoleteLayoutParam,TextFields" />
+
+    <Button
+        android:id="@+id/bcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:padding="15dp"
+        android:text="Continue"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+
